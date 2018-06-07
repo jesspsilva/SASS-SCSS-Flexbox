@@ -1,0 +1,11 @@
+.container {
+    @include flex (flex, row, flex-start, center, wrap);
+    background-color: $blue;
+    @include dimensions (100%, 200px);
+    margin-top: 80px;
+    p {
+        margin: auto;
+        color: $white;
+        font-size: $title-size;
+    }
+}

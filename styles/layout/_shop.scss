@@ -1,0 +1,14 @@
+.shop {
+    background-color: $light-blue;
+    @include dimensions (100%, 650px);
+    @include flex (flex, row, space-evenly, center, wrap);
+}
+
+.shop-items {
+    @include dimensions (25%, 250px);
+    margin-left: $margin-left;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    background-size: cover;
+}

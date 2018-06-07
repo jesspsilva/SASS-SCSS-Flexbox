@@ -1,0 +1,9 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    margin: 0;
+    @include dimensions (100%, 100%);
+}

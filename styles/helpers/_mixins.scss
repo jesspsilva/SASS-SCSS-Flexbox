@@ -1,0 +1,18 @@
+@mixin flex ($display, $direction, $justify, $align, $wrap: nowrap) {
+    display: $display;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin link-hover($border) {
+    &:hover {
+        border-bottom: $border;
+    }
+}
+
+@mixin dimensions($width, $height) {
+    width: $width;
+    height: $height;
+}

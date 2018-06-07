@@ -1,0 +1,26 @@
+.header-nav {
+    @include flex (flex, row, flex-start, center, wrap);
+    @include dimensions (100%, 80px);
+    background-color: $dark-blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    box-shadow: $box-shadow;
+    h1 {
+        color: $white;
+        font-size: $title-size;
+        margin-left: $margin-left;
+    }
+    a {
+        text-decoration: none;
+        color: $white;
+        margin-left: $margin-left;
+        text-align: center;
+        @include link-hover($link-hover-border);
+    }
+    a:active {
+        font-weight: bold;
+    }
+}
